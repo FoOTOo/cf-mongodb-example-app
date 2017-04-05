@@ -19,8 +19,8 @@ class MongodbCollection
 
   def with_database
     begin
-      client = Mongo::MongoClient.from_uri(mongo_uri)
-      yield client.db
+      client = Mongo::Client.new(mongo_uri)
+      yield client.database
     rescue CloudFoundryEnvironment::NoMongodbBoundError, Mongo::ConnectionFailure
       app.tell_user_how_to_bind
     ensure
