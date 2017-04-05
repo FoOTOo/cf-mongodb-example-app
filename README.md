@@ -1,5 +1,7 @@
 # Example MongoDB Application [![Build Status](https://travis-ci.org/pivotal-cf/cf-mongodb-example-app.svg)](https://travis-ci.org/pivotal-cf/cf-mongodb-example-app)
 
+A fork of the original https://github.com/pivotal-cf/cf-mongodb-example-app
+
 This simple application illustrates the use of the Pivotal MongoDB data service in a Ruby application running on Pivotal Cloud Foundry.
 
 ## Installation
